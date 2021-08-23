@@ -1,0 +1,33 @@
+.place{
+    width:max-content;
+}
+
+.titrePlace{
+    font-size: x-large;
+}
+
+.placeContenu{
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+}
+
+.placeContenu img{
+    width: 300px;
+    height: 200px;
+}
+
+.presentationPlace{
+    border: solid black 3px;
+    width: 300px;
+    margin-left: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: white;
+    padding: 10px;
+    font-weight: bold;
+
+    overflow-y: scroll;
+    scrollbar-color: rebeccapurple green;
+    scrollbar-width: thin;
+}

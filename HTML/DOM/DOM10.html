@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head></head>
+    <body>
+        <div><p id="myP">Un peu de texte <a>et un lien</a></p></div>
+        <script>
+            // Insérer un élément avant un autre
+            var paragraphe = document.getElementsByTagName("p")[0];
+            var emphasis = document.createElement("em"),
+            emphasisText = document.createTextNode(" en emphase légère ");
+            emphasis.appendChild(emphasisText);
+            paragraphe.insertBefore(emphasis, paragraphe.lastChild);
+        </script>
+    </body>
+</html>

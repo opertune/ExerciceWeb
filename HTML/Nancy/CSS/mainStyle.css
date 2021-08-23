@@ -1,0 +1,80 @@
+body {
+    background-color: grey;
+}
+
+#decouvrirNancy{
+    width:min-content;
+}
+
+.grosTitre{
+    color: yellow;
+    text-align: center;
+}
+
+#divVille{
+    background-color: orangered;
+    border-radius: 50px;
+}
+
+#paragrapheVille{
+    font-weight: bold;
+    font-style: italic;
+    text-align: center; 
+    padding: 20px;
+}
+
+#video{
+    border: solid black 5px;
+    padding: 10px;
+    width: 900px;
+    height: 515px;
+}
+
+#liste{
+    background-color: yellowgreen;
+    border-radius: 50px;
+}
+
+#titreListe{
+    font-size: large;
+    text-align: center;
+}
+
+#lienListe{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    font-size: large;
+}
+
+#lienListe img{
+    margin-right: 5px;
+    vertical-align: middle;
+    width: 30px;
+    height: 20px;
+}
+
+/*#selectList{
+    margin-bottom: 30px;
+    margin-left: 30px;
+}*/
+
+#menu{
+    background-color: cornflowerblue;
+    height: 57px;
+}
+
+.lienMenu{
+    width: max-content;
+    list-style-type: none;
+    float: left;
+    margin-left: -20px;
+    margin-right: 20px;
+    padding: 15px;
+    font-size: x-large;
+}
+
+.lienMenu:hover{
+    background-color:darkgreen;
+}

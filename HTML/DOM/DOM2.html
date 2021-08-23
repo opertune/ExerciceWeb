@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head></head>
+    <body>
+        <a id="myLink" href="google.com">un lien modifié dynamiquement</a>
+        <script>
+            var link = document.getElementById("myLink");
+            var href = link.getAttribute('href');
+            alert(href);
+            link.setAttribute('href', '../index.html');
+            /*link.href = '../index.html';*/
+        </script>
+    </body>
+</html>

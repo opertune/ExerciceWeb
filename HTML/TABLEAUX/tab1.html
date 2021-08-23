@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            // Constructeur
+            function Person(nick, age, sex, classe, work, friends){
+                this.nick = nick;
+                this.age = age;
+                this.sex = sex;
+                this.classe = classe;
+                this.work = work;
+                this.friends = friends;
+            }
+
+            var seb = new Person('Rafael', 15, 'm', '3e 5', 'Javascripteur', [])
+            var lau = new Person('Mathilde', 12, 'f', '5e 6', 'Webmaster', []);
+            alert(seb.nick); // affiche Rafael
+            alert(lau.nick); // affiche Mathilde
+
+            seb.nick = 'Bastien'; // on change le prénom
+            seb.age = 14; // on change l'age
+            alert(seb.nick + ' a ' + seb.age + ' ans'); // affiche 'Bastien a 14 ans'
+        </script>
+    </body>
+</html>

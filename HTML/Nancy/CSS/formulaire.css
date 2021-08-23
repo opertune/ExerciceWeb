@@ -1,0 +1,50 @@
+#formulaire{
+    width:max-content;
+}
+
+legend{
+    font-size: x-large;
+}
+
+fieldset{
+    width: 400px;
+    background-color: darkcyan;
+    margin: 10px auto;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.labelFormulaire{
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.inputField{
+    width: 200px;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.inputField:hover{
+    background-color:hotpink;
+}
+
+#sendBTN{
+    margin: auto;
+    width: 200px;
+}
+
+#sendBTN:hover{
+    background-color: hotpink;
+}
+
+#rdbCovoiturage{
+    margin: auto;
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 5px;
+}

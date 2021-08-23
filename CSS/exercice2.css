@@ -1,0 +1,26 @@
+#prenom{
+    border: solid white 3px;
+    width: max-content;
+    padding: 5px;
+}
+
+label{
+    font-size: x-large;
+    color: white;
+}
+
+#inputName{
+    margin-left: 10px;
+    margin-right: 10px;
+    vertical-align:text-bottom;
+}
+
+#btnSend{
+    margin-right: 10px;
+    vertical-align:text-bottom;
+}
+
+#listName{
+    font-size: x-large;
+    color: white;
+}

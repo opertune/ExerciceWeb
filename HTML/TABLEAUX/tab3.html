@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+
+    </head>
+    <body>
+        <script>
+            var myArray = ['test1', 'test2'].concat(['test3', 'test4']);
+            alert(myArray); // affiche test1 test2 test3 test4
+            // parcourir un tableau avec foreach
+            myArray.forEach(function(value, index, array){
+                alert(
+                    'Index : ' + index + '\n' + 'Valeur : ' + value
+                );
+            });
+
+            // Rechercher un élément
+            var element2 = ['test'],
+            myArray = ['test', element2];
+            alert(myArray.indexOf(element2)); // affiche 1
+            var myArray2 = [3, 1, 5, 10, 4, 2];
+            myArray2.sort();
+            alert(myArray2); // affiche 1, 10, 2, 3, 4, 5
+        </script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head></head>
+    <body>
+        <div id="menu">
+            <div class="item">
+                <span>Element 1</span>
+                <span>Element 2</span>
+            </div>
+            <div class="publicite">
+                <span>Element 3</span>
+                <span>Element 4</span>
+            </div>
+        </div>
+        <div id="contenu"><span>Introduction au contenu de la page...</span></div>
+        <script>
+            var query = document.querySelector('#menu .item span'),
+            queryAll = document.querySelectorAll('#menu .item span');
+            alert(query.innerHTML);
+            alert(queryAll.length);
+            alert(queryAll[0].innerHTML + ' ' + queryAll[1].innerHTML);
+        </script>
+    </body>
+</html>

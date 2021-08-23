@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head></head>
+    <body>
+        <div>
+            <p id="myP">Un peu de texte, <a>un lien</a> et <strong>une portion en emphase</strong></p>
+        </div>
+        <script>
+            var paragraphe = document.getElementById("myP");
+            // retourne un tableau contenant la liste des enfants d'un élément
+            var first = paragraphe.firstChild;
+            var next = first.nextSibling;
+            // Affiche "un lien"
+            alert(next.firstChild.data);
+        </script>
+    </body>
+</html>

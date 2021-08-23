@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulaire</title>
+        <link href="../CSS/formulaire.css" rel="stylesheet">
+        <link rel="stylesheet" href="../CSS/mainStyle.css">
+        <link rel="stylesheet" href="../CSS/placeCss.css">
+    </head>
+    <body>
+        <div id="formulaire">
+            <div id="menu">
+                <ul>
+                    <li class="lienMenu"><a href="../../index.html">Index</a></li>
+                    <li class="lienMenu"><a href="index.html">Nancy</a></li>
+                    <li class="lienMenu"><a href="Stanislas.html">Place Stanislas</a></li>
+                    <li class="lienMenu"><a href="Carriere.html">Place Carrière</a></li>
+                    <li class="lienMenu"><a href="formulaire.html">Formulaire</a></li>
+                </ul>
+            </div>
+            <!-- Formulaire -->
+            <fieldset>
+                <!-- Titre du formulaire -->
+                <legend class="grosTitre">Trouver une place proche de chez vous</legend>
+
+                <!-- Contenu du formulaire -->
+                <form method="POST" action="">
+                    <!-- Input text / number -->
+                    <label class="labelFormulaire">Ville de résidence:</label>
+                    <input type="text" class="inputField" required placeholder="Ville">
+                    <label class="labelFormulaire">Distance maximale:</label>
+                    <input type="number" class="inputField" required placeholder="Distance maximale en km" min="0">
+
+                    <!-- check button -->
+                    <div><input type="checkbox" class="choixMultiple" name="vehicule"><label>Avez vous un véhicule à vôtre disposition ?</label></div>
+                    <div><input type="checkbox" class="choixMultiple" name="transportCommun"><label>Souhaitez vous utiliser les transports en commun ?</label></div>
+
+                    <!-- Radio button -->
+                    <label class="labelFormulaire">Voulez vous faire du Covoiturage ?</label>
+                    <div id="rdbCovoiturage">
+                        <input type="radio" name="covoiturage" value="oui"><label>Oui</label>
+                        <input type="radio" name="covoiturage" value="non" checked><label>Non</label>
+                    </div>
+
+                    <!-- submit button -->
+                    <input type="submit" value="Envoyer" id="sendBTN">
+                </form>
+            </fieldset>
+        </div>
+    </body>
+</html>

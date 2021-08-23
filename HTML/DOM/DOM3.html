@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head></head>
+    <body>
+        <div id="myDiv"><p>Un peu de texte <a>et un lien</a></p></div>
+        <div id="myDiv2"><p>Un peu de texte <a>et un deuxieme lien</a></p></div>
+        <script>
+            var div = document.getElementById("myDiv");
+            alert(div.innerHTML);
+            document.getElementById("myDiv").innerHTML = '<blockquote>Je mets une citation à la place du paragraphe</blockquote>';
+
+            var div = document.getElementById("myDiv2");
+            alert(div.innerHTML);
+            document.getElementById("myDiv2").innerHTML += ' et <strong>une portion mise en emphase</strong>';
+        </script>
+    </body>
+</html>

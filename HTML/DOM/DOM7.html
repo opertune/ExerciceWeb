@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head></head>
+    <body>
+        <div><p id="myP">Un peu de texte, <a>et un lien </a></p></div>
+        <script>
+            // Créer et insére des éléments
+            var newLink = document.createElement("a");
+            newLink.id = "myA";
+            newLink.href = "http://google.com/";
+            newLink.title = "google";
+            newLink.setAttribute("tabindex", "10");
+            // le nouvel élément est le dernier enfant dans le paragraphe avec id myP
+            document.getElementById("myP").appendChild(newLink);
+            // ces deux lignes pour ajouter le texte
+            var newLinkText = document.createTextNode("google.com")
+            newLink.appendChild(newLinkText);
+        </script>
+    </body>
+</html>

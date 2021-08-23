@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Exercice 5</title>
+        <link href="../CSS/mainStyle.css" rel="stylesheet">
+        <link href="../CSS/exercice5.css" rel="stylesheet">
+        <script src="../JavaScript/scriptExercice5.js"></script>
+    </head>
+    <body>
+        <div id="calculatrice">
+            <label id="titre">Calculatrice</label>
+            <div id="affichage">
+                <input id="formule" type="text" disabled>
+                <input id="result" type="text" disabled>
+            </div>
+            <div id="button">
+                <input type="button" class="btnCalc" value="C" onclick="clearAffichage()">
+                <input type="button" class="btnCalc" value="(" onclick="afficher('(')">
+                <input type="button" class="btnCalc" value=")" onclick="afficher(')')">
+                <input type="button" class="btnCalc" value="%" onclick="afficher('%')">
+                <input type="button" class="btnCalc" value="/" onclick="afficher('/')">
+                <input type="button" class="btnCalc" value="7" onclick="afficher('7')">
+                <input type="button" class="btnCalc" value="8" onclick="afficher('8')">
+                <input type="button" class="btnCalc" value="9" onclick="afficher('9')">
+                <input type="button" class="btnCalc" value="*" onclick="afficher('*')">
+                <input type="button" class="btnCalc" value="4" onclick="afficher('4')">
+                <input type="button" class="btnCalc" value="5" onclick="afficher('5')">
+                <input type="button" class="btnCalc" value="6" onclick="afficher('6')">
+                <input type="button" class="btnCalc" value="-" onclick="afficher('-')">
+                <input type="button" class="btnCalc" value="1" onclick="afficher('1')">
+                <input type="button" class="btnCalc" value="2" onclick="afficher('2')">
+                <input type="button" class="btnCalc" value="3" onclick="afficher('3')">
+                <input type="button" class="btnCalc" value="+" onclick="afficher('+')">
+                <input type="button" class="btnCalc" value="+/-" onclick="negative()">
+                <input type="button" class="btnCalc" value="0" onclick="afficher('0')">
+                <input type="button" class="btnCalc" value="." onclick="afficher('.')">
+            </div>
+            <input type="button" id="equal" value="=" onclick="calculer()">
+            <div id="precision">
+                <label>Précision: </label>
+                <input id="updatePrecision" type="number" min="0" max="4" value="0" onchange="precision()">
+            </div>
+            
+        </div>
+        <a class="lien" href="index.html">Index</a>
+    </body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head></head>
+    <body>
+        <div><p id="myP">Un peu de texte <a>et un lien</a></p></div>
+        <script>
+            // Cloner, remplacer, supprimer un élément
+            var link = document.getElementsByTagName("a")[0];
+            var newLabel = document.createTextNode("et un hyperlien");
+            // Remplace un élément par un autre
+            link.replaceChild(newLabel, link.firstChild);
+            // Supprime un élément
+            link.parentNode.removeChild(link);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head></head>
+    <body>
+        <div>
+            <p id="myP">Un peu de texte, <a>un lien</a> et <strong>une portion en emphase</strong></p>
+        </div>
+        <script>
+            var paragraphe = document.getElementById("myP");
+            /* 
+            Accède au premier et au dernier élément de noeud
+            */
+            var first = paragraphe.firstChild;
+            var last = paragraphe.lastChild;
+            alert(first.nodeName.toLocaleLowerCase());
+            alert(last.nodeName.toLocaleLowerCase());
+        </script>
+    </body>
+</html>

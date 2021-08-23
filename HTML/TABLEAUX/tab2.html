@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            // Constructeur
+            function Person(nick, age, sex, classe, work, friends){
+                this.nick = nick;
+                this.age = age;
+                this.sex = sex;
+                this.classe = classe;
+                this.work = work;
+                this.friends = friends;
+                this.addFriend = function(nick, age, sex, classe, work, friends){
+                    this.friends.push(new Person(nick, age, sex, classe, work, friends));
+                };
+            }
+
+            var seb = new Person('Rafael', 15, 'm', '3e 5', 'Javascripteur', [])
+            // On ajoute un ami dans le tableau "friends"
+            seb.friends.push(new Person('Jerome', 13, 'm', '3e 5', 'Javascripteur aussi', []));
+            alert(seb.friends[0].nick); // affiche 'Jerome'
+            seb.addFriend('Tom', 12, 'm', '6e 2', 'Javascripteur', [])
+            alert(seb.friends[1].nick); // affiche 'Tom'
+        </script>
+    </body>
+</html>

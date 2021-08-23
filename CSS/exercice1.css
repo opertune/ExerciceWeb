@@ -1,0 +1,20 @@
+#age{
+    width: max-content;
+    border: solid white 3px;
+    padding: 10px;
+}
+
+#inputAge{
+    margin-left: 10px;
+    margin-right: 10px;
+    vertical-align:text-bottom;
+}
+
+#commentaire{
+    font-style: italic;
+}
+
+label{
+    color: white;
+    font-size: x-large;
+}

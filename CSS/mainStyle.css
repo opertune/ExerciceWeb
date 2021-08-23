@@ -1,0 +1,21 @@
+body{
+    background-color: #272727;
+}
+
+.lien{
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+}
+
+a:visited{
+    color: white;
+}
+a:link{
+    color: white;
+}
+
+#dom, #tab, #string{
+    font-size: x-large;
+}
